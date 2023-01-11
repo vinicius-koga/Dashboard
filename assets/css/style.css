@@ -34,32 +34,32 @@ input {
 /*DARK & LIGHT THEME*/
 .dashboardDark {
     background-color: var(--bg-darker);
-    transition: all 0.3s ease;
+    transition: all 0.25s;
 }
 
 .dashboardLight {
     background-color: #fff;
-    transition: all 0.3s ease;
+    transition: all 0.25s;
 }
 
 .darkTheme {
     background-color: var(--bg-dark);
-    transition: all 0.3s ease;
+    transition: all 0.25s;
 }
 
 .lightTheme {
     background-color: #fff;
-    transition: all 0.3s ease;
+    transition: all 0.25s;
 }
 
 .fontDarkTheme {
     color: var(--bg-grey);
-    transition: all 0.3s ease;
+    transition: all 0.25s;
 }
 
 .fontLightTheme {
     color: var(--bg-darkBlue);
-    transition: all 0.3s ease;
+    transition: all 0.25s;
 }
 
 /* SIDEBAR */
@@ -124,6 +124,17 @@ input {
 /* DASHBOARD */
 
 .dashboard {
-    width: 100vw;
     height: 100vh;
+    margin-left: 300px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1199px) {
+    .sidebar {
+        margin-left: -300px;
+    }
+
+    .dashboard {
+        margin-left: 0;
+    }
 }
