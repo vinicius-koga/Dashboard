@@ -12,23 +12,284 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar DarkTheme">
+    <div class="sidebar lightTheme" style="border-right: 1px solid #ddd;">
         <header class="sidebarHeader d-flex justify-content-between px-4 py-5">
-            <div class="sidebarHeader-Left d-flex align-items-center">
-                <i class="bi bi-person-fill me-1 d-flex" style="font-size: 23px; color: var(--bg-blue); margin-bottom: 2px;"></i>
-                <h4 class="m-0">Mazer</h4>
+            <div class="sidebarHeader-Left">
+                <a href="#" class="d-flex align-items-center text-decoration-none">
+                    <i class="bi bi-person-fill me-1 d-flex" style="font-size: 23px; color: var(--bg-blue); margin-bottom: 4px;"></i>
+                    <h4 class="m-0">Dashboard</h4>
+                </a>
             </div>
             <div class="sidebarHeader-Right d-flex align-items-center">
-                <i class="bi bi-brightness-high fontDarkTheme" style="font-size: 17px;"></i>
+                <i class="bi bi-brightness-high fontLightTheme" style="font-size: 17px;"></i>
                 <div class="form-check form-switch ms-2">
                     <input type="checkbox" class="form-check-input unselected switchThemeBtn" onclick="switchTheme()">
                 </div>
-                <i class="bi bi-moon-stars fontDarkTheme" style="font-size: 15px;"></i>
+                <i class="bi bi-moon-stars fontLightTheme" style="font-size: 15px;"></i>
             </div>
         </header>
+        <nav class="sidebarMenu mx-4">
+            <div class="accordionLight mb-4" id="accordionExample">
+
+                <span class="fontLightTheme menuTitle">Menu</span>
+
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-grid-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                        <span class="fontLightTheme accordionTitle">Dashboard</span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-box2-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Components</span>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-collection-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Extra Components</span>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-grid-1x2-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Layouts</span>
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordionLight mb-4" id="accordionExample">
+
+                <span class="fontLightTheme menuTitle">Role & Permissions</span>
+
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-person-circle me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                        <span class="fontLightTheme accordionTitle">Users</span>
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-person-check-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Admins</span>
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-collection-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Extra Components</span>
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordionLight mb-4" id="accordionExample">
+
+                <span class="fontLightTheme menuTitle">Pages</span>
+
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-envelope-at-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                        <span class="fontLightTheme accordionTitle">E-mail Application</span>
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-chat-dots-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Chat</span>
+                      </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-images me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Photo Gallery</span>
+                      </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEleven">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-bag-x me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Checkout Page</span>
+                      </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwelve">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-clipboard-check me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Authentication</span>
+                      </button>
+                    </h2>
+                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">another dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">some dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">that's a dummy link</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">other dummy link</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
     </div>
-    <div class="dashboard dashboardDark">
-        
+    <div class="dashboard dashboardLight">
+
     </div>
 
     <script src="assets/js/bootstrap.bundle.js"></script>

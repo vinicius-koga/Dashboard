@@ -17,29 +17,49 @@ input {
     cursor: pointer;
 }
 
+/* CUSTOM SCROLL-BAR */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
 /*DARK & LIGHT THEME*/
 .dashboardDark {
     background-color: var(--bg-darker);
+    transition: all 0.3s ease;
 }
 
 .dashboardLight {
     background-color: #fff;
+    transition: all 0.3s ease;
 }
 
-.DarkTheme {
+.darkTheme {
     background-color: var(--bg-dark);
+    transition: all 0.3s ease;
 }
 
 .lightTheme {
     background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .fontDarkTheme {
     color: var(--bg-grey);
+    transition: all 0.3s ease;
 }
 
 .fontLightTheme {
     color: var(--bg-darkBlue);
+    transition: all 0.3s ease;
 }
 
 /* SIDEBAR */
@@ -49,11 +69,56 @@ input {
     width: 300px;
     height: 100vh;
     position: absolute;
+    overflow-y: hidden;
+}
+
+.sidebar:hover {
+    overflow-y: overlay;
 }
 
 .sidebarHeader h4 {
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--bg-blue);
+}
+
+.menuTitle {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.accordionTitle {
+    font-weight: 600;
+}
+
+.sidebarItemBody {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.sidebarItemBody .list-group-item {
+    transition: all 0.3s ease;
+}
+
+.sidebarItemBody .list-group-item:hover {
+    margin-left: 6px;
+}
+
+.accordionBtnLight {
+    transition: all 0.1s ease;
+}
+
+.accordionBtnLight:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.accordionBtnDark {
+    transition: all 0.1s ease;
+}
+
+.accordionBtnDark:hover {
+    background-color: #2a2a3f;
 }
 
 /* DASHBOARD */
