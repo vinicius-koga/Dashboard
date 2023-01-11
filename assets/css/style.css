@@ -1,0 +1,64 @@
+:root {
+    --bg-dark: #1e1e2d;
+    --bg-darker: #151521;
+    --bg-darkBlue: #324c82;
+    --bg-blue: #435ebe;
+    --bg-light-blue: #7c8db5;
+    --bg-grey: #9798ab;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+/*DARK & LIGHT THEME*/
+.dashboardDark {
+    background-color: var(--bg-darker);
+}
+
+.dashboardLight {
+    background-color: #fff;
+}
+
+.DarkTheme {
+    background-color: var(--bg-dark);
+}
+
+.lightTheme {
+    background-color: #fff;
+}
+
+.fontDarkTheme {
+    color: var(--bg-grey);
+}
+
+.fontLightTheme {
+    color: var(--bg-darkBlue);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+}
+
+.sidebarHeader h4 {
+    font-weight: 700;
+    color: var(--bg-blue);
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    width: 100vw;
+    height: 100vh;
+}
