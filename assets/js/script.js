@@ -139,6 +139,8 @@ closeBtn.addEventListener('click', () => {
         sidebar.style.removeProperty('margin-left');
         menuOp.style.opacity = '1';
         menuOp.style.cursor = 'pointer'
+        backDrop.style.opacity = '0';
+        backDrop.style.display = 'none';
     }
 })
 
