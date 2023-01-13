@@ -149,3 +149,83 @@ backDrop.addEventListener('click', () => {
     backDrop.style.opacity = '0';
     backDrop.style.display = 'none';
 })
+
+var options01 = {
+    series: [{
+        name: 'Inflation',
+        data: [5.4, 2.3, 4.5, 10.1, 6.7, 4.5, 2.5, 5.6, 1.4, 0.8, 2.3, 4.5]
+    }],
+    chart: {
+        height: 350,
+        type: 'bar',
+    },
+    plotOptions: {
+        bar: {
+            borderRadius: 10,
+            dataLabels: {
+                position: 'top', // top, center, bottom
+            },
+        }
+    },
+    dataLabels: {
+        enabled: true,
+        formatter: function (val) {
+            return val + "%";
+        },
+        offsetY: -20,
+        style: {
+            fontSize: '12px',
+            colors: ["#000"]
+        }
+    },
+
+    xaxis: {
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        position: 'top',
+        axisBorder: {
+            show: false
+        },
+        axisTicks: {
+            show: false
+        },
+        crosshairs: {
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    colorFrom: '#D8E3F0',
+                    colorTo: '#BED1E6',
+                    stops: [0, 100],
+                    opacityFrom: 0.4,
+                    opacityTo: 0.5,
+                }
+            }
+        },
+        tooltip: {
+            enabled: true,
+        }
+    },
+    yaxis: {
+        axisBorder: {
+            show: false
+        },
+        axisTicks: {
+            show: false,
+        },
+        labels: {
+            show: false,
+            formatter: function (val) {
+                return val + "%";
+            }
+        }
+
+    },
+    title: {
+        text: '',
+    },
+    theme: {
+        palette: 'palette2'
+    }
+};
+
+var chart = new ApexCharts(document.querySelector(".graph01"), options01);
+chart.render();
