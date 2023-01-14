@@ -167,7 +167,7 @@ input {
 .backDrop {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #000;
     cursor: pointer;
     position: absolute;
     left: 300px;
