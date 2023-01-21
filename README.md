@@ -1,4 +1,4 @@
-# Dashboard **IN PROGRESS
+# Dashboard
 
 Um Dashboard single-page totalmente responsivo.
 
