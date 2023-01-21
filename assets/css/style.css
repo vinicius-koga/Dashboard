@@ -20,6 +20,7 @@ input {
 /* CUSTOM SCROLL-BAR */
 ::-webkit-scrollbar {
     width: 6px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -184,6 +185,10 @@ input {
 
 .dashboardContentRight {
     width: 25%;
+}
+
+.commentsSectionTable tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* MEDIA QUERY */

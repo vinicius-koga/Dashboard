@@ -1,7 +1,7 @@
 var options01 = {
     series: [{
         name: 'Inflation',
-        data: [4.4, 2.3, 4.5, 10.1, 6.7, 4.5, 2.2, 5.0, 4.4, 3.8, 2.3, 4.5]
+        data: [4.4, 2.3, 4.5, 10.1, 6.7, 4.5, 2.2, 5.0]
     }],
     chart: {
         height: 350,
@@ -31,7 +31,7 @@ var options01 = {
     },
 
     xaxis: {
-        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        categories: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         position: 'top',
         axisBorder: {
             show: false
@@ -80,6 +80,44 @@ var options01 = {
 
 var chart1 = new ApexCharts(document.querySelector(".graph01"), options01);
 chart1.render();
+
+var options02 = {
+    series: [25000, 15000,],
+    chart: {
+        width: '100%',
+        height: '100%',
+        type: 'pie',
+    },
+    labels: ["Men", "Women"],
+    theme: {
+        monochrome: {
+            enabled: true
+        }
+    },
+    plotOptions: {
+        pie: {
+            dataLabels: {
+                offset: -15
+            }
+        }
+    },
+    title: {
+        text: ""
+    },
+    dataLabels: {
+        formatter(val, opts) {
+            const name = opts.w.globals.labels[opts.seriesIndex]
+            return [name, val.toFixed(1) + '%']
+        }
+    },
+    legend: {
+        show: false
+    }
+};
+
+var chart02 = new ApexCharts(document.querySelector(".graph02"), options02);
+chart02.render();
+
 
 function switchTheme() {
     let checkbox = document.querySelector('.switchThemeBtn');
