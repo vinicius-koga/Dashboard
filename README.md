@@ -1,6 +1,6 @@
 # Dashboard
 
-Um dashboard single-page totalmente responsivo. Nele utilizei os recursos do Bootstrap para exibir dados fictícios de um perfil de usuário. Um dos recursos em destaque é a seleção de tema (claro ou escuro).
+Um dashboard single-page totalmente responsivo em que utilizei os recursos do Bootstrap 5 para exibir dados fictícios de um perfil de usuário. Um dos recursos em destaque é a seleção de tema (claro ou escuro).
 
 ### Tecnologias Utilizadas:
 <ul>
