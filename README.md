@@ -10,4 +10,6 @@ Um dashboard single-page totalmente responsivo em que utilizei os recursos do Bo
     <li>JAVASCRIPT</li>
 </ul> 
 
+### Este site é responsivo à dispositivos mobile
+
 Baseado em um template de <a href="https://saugi.me/">Saugi</a>
